@@ -1,10 +1,10 @@
 services:
   postgres:
-    image: postgres:12
+    image: postgres:latest
     environment:
       - POSTGRES_PASSWORD=postgres_password
   redis:
-    image: redis:4
+    image: redis:latest
   nginx:
     depends_on:
       - api
