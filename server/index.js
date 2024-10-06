@@ -17,6 +17,9 @@ const pgOptions =  {
     database: keys.pgDb,
     password: keys.pgPassword,
     port: keys.pgPort,
+    ssl: {
+        rejectUnauthorized: false
+    }
 }
 console.log('pgoptions', pgOptions)
 const pgClient = new Pool(pgOptions);
