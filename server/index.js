@@ -18,6 +18,7 @@ const pgOptions =  {
     password: keys.pgPassword,
     port: keys.pgPort,
 }
+console.log('pgoptions', pgOptions)
 const pgClient = new Pool(pgOptions);
 
 pgClient.on("connect", (client) => {
